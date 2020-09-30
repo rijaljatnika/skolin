@@ -1155,14 +1155,14 @@ p {
 
 .navigation {
     position: relative;
-    background-color: #333;
+    /*background-color: #333;*/
 
 }
 #nav-pills {
  position: -webkit-sticky;
  position: sticky;
  z-index: 99;
- top: 110px;
+ top: 70px;
  background-color: white;
 }
 
