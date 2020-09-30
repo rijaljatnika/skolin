@@ -595,6 +595,13 @@ $(function() {
 
     /*=====  End of WOW active ======*/
 
+    
+    $("#filterBtn").on("click",function(event){
+        if ($(document).width() > 764) {
+            $("#main-content").toggleClass("col-lg-9 ml-3 mr-3")
+        }
+    });
+
     if($( document ).width() < 764){
         $("#filterTab").toggleClass("show");
         $("#filterTab").toggleClass("collapse");
