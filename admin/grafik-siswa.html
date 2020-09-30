@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Mirrored from seantheme.com/color-admin-v4.3/admin/html/chart-js.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Mar 2019 04:07:18 GMT -->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Live Edit Skolin</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  <!-- ================== BEGIN BASE CSS STYLE ================== -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/plugins/font-awesome/css/all.min.css" rel="stylesheet" />
+  <link href="assets/plugins/animate/animate.min.css" rel="stylesheet" />
+  <link href="assets/css/default/style.min.css" rel="stylesheet" />
+  <link href="assets/css/default/style-responsive.min.css" rel="stylesheet" />
+  <link href="assets/css/default/theme/default.css" rel="stylesheet" id="theme" />
+  <!-- ================== END BASE CSS STYLE ================== -->
+  <!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+  <link href="assets/plugins/jquery-jvectormap/jquery-jvectormap.css" rel="stylesheet" />
+  <link href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+  <link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
+  <!-- ================== END PAGE LEVEL STYLE ================== -->
+  <!-- ================== BEGIN BASE JS ================== -->
+  <script src="assets/plugins/pace/pace.min.js"></script>
+  <!-- ================== END BASE JS ================== -->
+</head>
+
+<body>
+  <!-- begin #page-loader -->
+  <div id="page-loader" class="fade show"><span class="spinner"></span></div>
+  <!-- end #page-loader -->
+  <!-- begin #page-container -->
+  <div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+    <!-- begin #header -->
+    <div id="header" class="header navbar-default">
+      <!-- begin navbar-header -->
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand">
+          <span></span>
+          <img src="../assets/images/logo.png">
+        </a>
+        <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+     </div>
+     <!-- end navbar-header -->
+     <!-- begin header-nav -->
+     <ul class="navbar-nav navbar-right">
+      <li>
+        <form class="navbar-form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter keyword" />
+            <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+      </li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle f-s-14">
+          <i class="fa fa-bell"></i>
+          <span class="label">5</span>
+        </a>
+        <ul class="dropdown-menu media-list dropdown-menu-right">
+          <li class="dropdown-header">NOTIFICATIONS (5)</li>
+          <li class="media">
+            <a href="javascript:;">
+              <div class="media-left">
+                <i class="fa fa-bug media-object bg-silver-darker"></i>
+              </div>
+              <div class="media-body">
+                <h6 class="media-heading">Server Error Reports <i class="fa fa-exclamation-circle text-danger"></i></h6>
+                <div class="text-muted f-s-11">3 minutes ago</div>
+              </div>
+            </a>
+          </li>
+          <li class="media">
+            <a href="javascript:;">
+              <div class="media-left">
+                <img src="assets/img/user/user-1.jpg" class="media-object" alt="" />
+                <i class="fab fa-facebook-messenger text-primary media-object-icon"></i>
+              </div>
+              <div class="media-body">
+                <h6 class="media-heading">John Smith</h6>
+                <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+                <div class="text-muted f-s-11">25 minutes ago</div>
+              </div>
+            </a>
+          </li>
+          <li class="media">
+            <a href="javascript:;">
+              <div class="media-left">
+                <img src="assets/img/user/user-2.jpg" class="media-object" alt="" />
+                <i class="fab fa-facebook-messenger text-primary media-object-icon"></i>
+              </div>
+              <div class="media-body">
+                <h6 class="media-heading">Olivia</h6>
+                <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+                <div class="text-muted f-s-11">35 minutes ago</div>
+              </div>
+            </a>
+          </li>
+          <li class="media">
+            <a href="javascript:;">
+              <div class="media-left">
+                <i class="fa fa-plus media-object bg-silver-darker"></i>
+              </div>
+              <div class="media-body">
+                <h6 class="media-heading"> New User Registered</h6>
+                <div class="text-muted f-s-11">1 hour ago</div>
+              </div>
+            </a>
+          </li>
+          <li class="media">
+            <a href="javascript:;">
+              <div class="media-left">
+                <i class="fa fa-envelope media-object bg-silver-darker"></i>
+                <i class="fab fa-google text-warning media-object-icon f-s-14"></i>
+              </div>
+              <div class="media-body">
+                <h6 class="media-heading"> New Email From John</h6>
+                <div class="text-muted f-s-11">2 hour ago</div>
+              </div>
+            </a>
+          </li>
+          <li class="dropdown-footer text-center">
+            <a href="javascript:;">View more</a>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown navbar-user">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <img src="assets/img/user/user-13.jpg" alt="" />
+          <span class="d-none d-md-inline">Gunawan</span> <b class="caret"></b>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a href="javascript:;" class="dropdown-item">Edit Profile</a>
+          <a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>
+          <a href="javascript:;" class="dropdown-item">Calendar</a>
+          <a href="javascript:;" class="dropdown-item">Setting</a>
+          <div class="dropdown-divider"></div>
+          <a href="javascript:;" class="dropdown-item">Log Out</a>
+        </div>
+      </li>
+    </ul>
+    <!-- end header navigation right -->
+  </div>
+  <!-- end #header -->
+  <!-- begin #sidebar -->
+  <div id="sidebar" class="sidebar">
+    <!-- begin sidebar scrollbar -->
+    <div data-scrollbar="true" data-height="100%">
+      <!-- begin sidebar user -->
+      <ul class="nav">
+        <li class="nav-profile">
+          <a href="javascript:;" data-toggle="nav-profile">
+            <div class="cover with-shadow d-flex"></div>
+            <div class="image">
+              <img src="assets/img/user/user-13.jpg" alt="" />
+            </div>
+            <div class="info">
+              <p>Gunaawan</p>
+              <p>Admin <small>0822312312</small></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <ul class="nav nav-profile">
+            <li><a href="javascript:;"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="javascript:;"><i class="fa fa-pencil-alt"></i> Send Feedback</a></li>
+            <li><a href="javascript:;"><i class="fa fa-question-circle"></i> Helps</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- end sidebar user -->
+      <!-- begin sidebar nav -->
+      <ul class="nav">
+        <li class="nav-header">Navigation</li>
+        <li class="has-sub">
+          <a href="javascript:;">
+            <b class="caret"></b>
+            <i class="fa fa-th-large"></i>
+            <span>Dashboard</span>
+          </a>
+          <ul class="sub-menu">
+            <li><a href="data-sekolah.html">Data Sekolah</a></li>
+            <li><a href="data-sekolah2.html">Kontak Sekolah</a></li>
+            <li class=""><a href="data-sekolah3.html">Cabang Sekolah</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="pesan.html">
+            <i class="fas fa-envelope"></i>
+            <span>Pesan</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="info-digital.html">
+            <i class="fas fa-tablet-alt"></i>
+            <span>Info Digital</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="upgrade-paket.html">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+            <span>Upgrade Paket</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="daftar-online.html">
+            <i class="fa fa-sign-in-alt"></i>
+            <span>Daftar Online</span>
+          </a>
+        </li>
+        <li class="has-sub active">
+          <a href="javascript:;">
+            <b class="caret"></b>
+            <i class="fa fa-chart-area"></i>
+            <span>Grafik</span>
+          </a>
+          <ul class="sub-menu">
+            <li class=""><a href="grafik-pengunjung.html">Pengunjung</a></li>
+            <li><a href="grafik-pendaftar.html">Pendaftar</a></li>
+            <li class="active"><a href="grafik-siswa.html">Siswa</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="">
+            <i class="fa fa-user-graduate"></i>
+            <span>Data Siswa</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="lowongan-kerja.html">
+            <i class="fa fa-user-md"></i>
+            <span>Lowongan Kerja</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="Transaksi.html">
+            <i class="fa fa-exchange-alt"></i>
+            <span>Transaksi</span>
+          </a>
+        </li>
+        <li class="has-sub">
+          <a href="javascript:;">
+            <b class="caret"></b>
+            <i class="fa fa-ad"></i>
+            <span>Iklan</span>
+          </a>
+          <ul class="sub-menu">
+            <li class=""><a href="iklan.html">Sekolah Rekomendasi</a></li>
+            <li><a href="iklan2.html">Iklan Per Daerah</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="">
+            <i class="fa fa-user-tie"></i>
+            <span>Admin</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="Verifikasi.html">
+            <i class="fa fa-user-check"></i>
+            <span>Verifikasi Akun</span>
+          </a>
+        </li>
+
+        <li class="">
+          <a href="">
+            <i class="fa fa-door-open"></i>
+            <span>Keluar</span>
+          </a>
+        </li>
+        <!-- begin sidebar minify button -->
+        <li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+        <!-- end sidebar minify button -->
+      </ul>
+      <!-- begin sidebar minify button -->
+      <li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+      <!-- end sidebar minify button -->
+    </ul>
+    <!-- end sidebar nav -->
+  </div>
+  <!-- end sidebar scrollbar -->
+</div>
+<div class="sidebar-bg"></div>
+<!-- end #sidebar -->
+<!-- begin #content -->
+<div id="content" class="content">
+  <div class="pull-right">
+      <a class="btn btn-success" href="../index.html">
+      Halaman Skeolah</a>
+    </div>
+    <h1 class="page-header">Skolin <small>Cara mudah mencari sekolah</small></h1>
+    <div class="panel-body bg-silver m-b-15">
+      <div class="form-group row">
+        <p class="col-form-label col-md-8">Grafik</p>
+        <div class="col-md-4">
+          <input type="search" class="form-control" placeholder="Search" />
+        </div>
+      </div>
+    </div>
+
+  <!-- end breadcrumb -->
+  <!-- begin page-header -->
+  <h1 class="page-header">Skolin <small>Cara mudah mencari sekolah</small></h1>
+  <!-- end page-header -->
+  <!-- begin row -->
+  <div class="row">
+    <!-- begin col-3 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-red">
+        <div class="stats-icon"><i class="fa fa-desktop"></i></div>
+        <div class="stats-info">
+          <h4 class="text-uppercase">Total Siswa</h4>
+          <p>567</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end col-3 -->
+    <!-- begin col-3 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-orange">
+        <div class="stats-icon"><i class="fa fa-link"></i></div>
+        <div class="stats-info">
+          <h4 clas="text-uppercase">Siswa Baru</h4>
+          <p>30</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end col-3 -->
+    <!-- begin col-3 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-grey-darker">
+        <div class="stats-icon"><i class="fa fa-users"></i></div>
+        <div class="stats-info">
+          <h4 clas="text-uppercase">Siswa Keluar (Mutasi)</h4>
+          <p>120</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end col-3 -->
+    <!-- begin col-3 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-info">
+        <div class="stats-icon"><i class="fa fa-link"></i></div>
+        <div class="stats-info">
+          <h4 clas="text-uppercase">Pindahan daru Sekolah Lain</h4>
+          <p>212</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-info">
+        <div class="stats-icon"><i class="fa fa-link"></i></div>
+        <div class="stats-info">
+          <h4 clas="text-uppercase">Siswa Kelas 1</h4>
+          <p>121</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-info">
+        <div class="stats-icon"><i class="fa fa-link"></i></div>
+        <div class="stats-info">
+          <h4 clas="text-uppercase">Siswa Kelas 2</h4>
+          <p>152</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-info">
+        <div class="stats-icon"><i class="fa fa-link"></i></div>
+        <div class="stats-info">
+          <h4 clas="text-uppercase">Siswa Kelas 3</h4>
+          <p>121</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-info">
+        <div class="stats-icon"><i class="fa fa-link"></i></div>
+        <div class="stats-info">
+          <h4 clas="text-uppercase">Siswa Kelas 4</h4>
+          <p>152</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-info">
+        <div class="stats-icon"><i class="fa fa-link"></i></div>
+        <div class="stats-info">
+          <h4 clas="text-uppercase">Siswa Kelas 5</h4>
+          <p>312</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <div class="widget widget-stats bg-info">
+        <div class="stats-icon"><i class="fa fa-link"></i></div>
+        <div class="stats-info">
+          <h4 clas="text-uppercase">Siswa Kelas 6</h4>
+          <p>125</p>
+        </div>
+        <div class="stats-link">
+          <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end col-3 -->
+  </div>
+  <!-- end row -->
+  <div class="row">
+    <div class="col-md-7">
+      <div class="panel  panel-inverse">
+        <div class="panel-heading">
+          <h4 class="panel-title">Jumlah Siswa Perbulan</h4>
+        </div>
+        <div class="panel-body">
+          <canvas id="doubleChart" width="480" height="250"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="panel  panel-inverse">
+        <div class="panel-heading">
+
+          <h4 class="panel-title">Pendaftar berdasarkan Jenis Kelamin</h4>
+        </div>
+        <div class="panel-body">
+          <canvas id="pieChart" width="480" height="250"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- begin col-4 -->
+    <!-- end col-4 -->
+    <div class="col-md-8">
+      <!-- begin panel -->
+      <div class="panel panel-inverse" data-sortable-id="flot-chart-5">
+        <div class="panel-heading">
+
+          <h4 class="panel-title">Pendaftaran Pertahun</h4>
+        </div>
+        <div class="panel-body">
+          <div>
+            <canvas id="myChart" width="480" height="150"></canvas>
+          </div>
+        </div>
+      </div>
+      <!-- end panel -->
+    </div>
+    <div class="col-md-4">
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title">Kunjungan Berdasarkan Usia</h4>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-valign-middle">
+              <tbody>
+                <tr>
+                  <td style="width:100px">5 Tahun</td>
+                  <td>
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar" style="width: 87%">87</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width:100px">6 Tahun</td>
+                  <td>
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar" style="width: 80%">80</div>
+                    </div>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td style="width:100px">7 Tahun</td>
+                  <td>
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar" style="width: 75%">75</div>
+                    </div>
+                  </td>
+
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section 3 -->
+  <!-- begin row -->
+  <!-- kunjungan daerah -->
+  <div class="row">
+    <div class="col-md-7">
+      <div class="panel  panel-inverse">
+        <div class="panel-heading">
+          <h4 class="panel-title"> Berdasarkan Agama</h4>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-valign-middle">
+              <tbody>
+                <tr>
+                  <td style="width: 100px;">Islam</td>
+                  <td style="width: 90%">
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar bg-success" style="width: 87%"></div>
+                    </div>
+                  </td>
+                  <td>223<span class="text-success"></span></td>
+                </tr>
+                <tr>
+                  <td style="width: 100px;">Kristen</td>
+                  <td style="width: 90%">
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar bg-red" style="width: 80%"></div>
+                    </div>
+                  </td>
+                  <td>423</td>
+                </tr>
+                <tr>
+                  <td style="width: 100px;">Hindu</td>
+                  <td style="width: 90%">
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar bg-orange" style="width: 75%"></div>
+                    </div>
+                  </td>
+                  <td>142</td>
+                </tr>
+                <tr>
+                  <td style="width: 100px;">Budha</td>
+                  <td style="width: 90%">
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar bg-info" style="width: 78%"></div>
+                    </div>
+                  </td>
+                  <td>112</td>
+                </tr>
+                <tr>
+                  <td style="width: 100px;">Khatolik</td>
+                  <td style="width: 90%">
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </td>
+                  <td>123</td>
+                </tr>
+                <tr>
+                  <td style="width: 100px;">Konghucu</label>
+                  </td>
+                  <td style="width: 90%">
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </td>
+                  <td>0</td>
+                </tr>
+
+                <tr>
+                  <td style="width: 100px;">Lainnya</label>
+                  </td>
+                  <td style="width: 90%">
+                    <div class="progress rounded-corner">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="panel panel-inverse">
+        <div class="panel-heading">
+          <h4 class="panel-title"> Berdasarkan pendidikan ayah</h4>
+        </div>
+        <div class="panel-body">
+         <div class="table-responsive">
+          <table class="table table-valign-middle">
+            <tbody>
+              <tr>
+                <td style="width:100px">S1</td>
+                <td>
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar" style="width: 87%">87</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width:100px">S2</td>
+                <td>
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar" style="width: 80%">80</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width:100px">S3</td>
+                <td>
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar" style="width: 34%">34</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width:100px">SMA</td>
+                <td>
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar" style="width: 43%">43</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width:100px">SMP</td>
+                <td>
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar" style="width: 63%">63</div>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- kunjungan berdasarkan daerah -->
+<div class="row">
+  <div class="col-md-7">
+    <div class="panel  panel-inverse">
+      <div class="panel-heading">
+        <h4 class="panel-title"> Berdasarkan Daerah</h4>
+      </div>
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table class="table table-valign-middle">
+            <tbody>
+              <tr>
+                <td style="width: 100px;">Pasar Rebo</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-info" style="width: 87%"></div>
+                  </div>
+                </td>
+                <td>223<span class="text-success"></span></td>
+              </tr>
+              <tr>
+                <td style="width: 100px;">Ciracas</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-info" style="width: 80%"></div>
+                  </div>
+                </td>
+                <td>423</td>
+              </tr>
+              <tr>
+                <td style="width: 100px;">Cipayung</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-info" style="width: 75%"></div>
+                  </div>
+                </td>
+                <td>142</td>
+              </tr>
+              <tr>
+                <td style="width: 100px;">Cimanggis</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-info" style="width: 78%"></div>
+                  </div>
+                </td>
+                <td>112</td>
+              </tr>
+              <tr>
+                <td style="width: 100px;">Lain-lain</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-info" style="width: 0%"></div>
+                  </div>
+                </td>
+                <td>123</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="panel panel-inverse">
+      <div class="panel-heading">
+        <h4 class="panel-title">Berdasarkan Pendidikan Ibu</h4>
+      </div>
+      <div class="panel-body">
+       <div class="table-responsive">
+        <table class="table table-valign-middle">
+          <tbody>
+            <tr>
+              <td style="width:100px">S1</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 87%">87</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">S2</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 80%">80</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">S3</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 34%">34</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">SMA</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 43%">43</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">SMP</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 63%">63</div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- berdasarkan asal sekolah  -->
+
+<div class="row">
+  <div class="col-md-7">
+    <div class="panel  panel-inverse">
+      <div class="panel-heading">
+        <h4 class="panel-title">Berdasarkan Asal Sekolah</h4>
+      </div>
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table class="table table-valign-middle">
+            <tbody>
+              <tr>
+                <td style="width: 100px;">SDN 1 Cibaregbeg</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-red" style="width: 87%"></div>
+                  </div>
+                </td>
+                <td>223<span class="text-success"></span></td>
+              </tr>
+              <tr>
+                <td style="width: 100px;">SD Namanya</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-red" style="width: 80%"></div>
+                  </div>
+                </td>
+                <td>423</td>
+              </tr>
+              <tr>
+                <td style="width: 100px;">SD Cipayung</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-red" style="width: 75%"></div>
+                  </div>
+                </td>
+                <td>142</td>
+              </tr>
+              <tr>
+                <td style="width: 100px;">SD Cimanggis</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-red" style="width: 78%"></div>
+                  </div>
+                </td>
+                <td>112</td>
+              </tr>
+              <tr>
+                <td style="width: 100px;">SDN Al muhajirin</td>
+                <td style="width: 90%">
+                  <div class="progress rounded-corner">
+                    <div class="progress-bar bg-red" style="width: 0%"></div>
+                  </div>
+                </td>
+                <td>123</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="panel panel-inverse">
+      <div class="panel-heading">
+        <h4 class="panel-title">Berdasarkan Pekerjaan Ayah</h4>
+      </div>
+      <div class="panel-body">
+       <div class="table-responsive">
+        <table class="table table-valign-middle">
+          <tbody>
+            <tr>
+              <td style="width:100px">PNS</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 87%">87</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">TNI</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 80%">80</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Polri</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 34%">34</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Wiraswasta</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 43%">43</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Buruh</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 63%">63</div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-7">
+    <div class="panel panel-inverse">
+      <div class="panel-heading">
+        <h4 class="panel-title">Berdasarkan Siswa</h4>
+      </div>
+      <div class="panel-body">
+       <div class="table-responsive">
+        <table class="table table-valign-middle">
+          <tbody>
+            <tr>
+              <td style="width:100px">Lengkap</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar bg-success" style="width: 87%">87</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Yatim</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar bg-success" style="width: 80%">80</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Piatu</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar bg-success" style="width: 34%">34</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Yatim Piatu</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar bg-success" style="width: 43%">43</div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="panel panel-inverse">
+      <div class="panel-heading">
+        <h4 class="panel-title">Berdasarkan Pekerjaan Ibu</h4>
+      </div>
+      <div class="panel-body">
+       <div class="table-responsive">
+        <table class="table table-valign-middle">
+          <tbody>
+            <tr>
+              <td style="width:100px">S1</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 87%">87</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">PNS</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 80%">80</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">TNI</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 34%">34</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Polri</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 43%">43</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Wiraswasta</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 63%">63</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Rumah Tangga</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar" style="width: 35%">35</div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <div class="panel panel-inverse">
+      <div class="panel-heading">
+        <h4 class="panel-title">Berdasarkan Status Tempat Tinggal</h4>
+      </div>
+      <div class="panel-body">
+       <div class="table-responsive">
+        <table class="table table-valign-middle">
+          <tbody>
+            <tr>
+              <td style="width:100px">Lengkap</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar bg-success" style="width: 87%">87</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Yatim</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar bg-success" style="width: 80%">80</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Piatu</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar bg-success" style="width: 34%">34</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100px">Yatim Piatu</td>
+              <td>
+                <div class="progress rounded-corner">
+                  <div class="progress-bar bg-success" style="width: 43%">43</div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  </div>
+</div>
+</body>
+<!-- end #content -->
+
+<!-- begin theme-panel -->
+<!-- end theme-panel -->
+
+<!-- begin scroll to top btn -->
+<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+<!-- end scroll to top btn -->
+</div>
+
+
+
+
+
+<!-- end page container -->
+
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+<script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+  <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="assets/plugins/js-cookie/js.cookie.js"></script>
+  <script src="assets/js/theme/default.min.js"></script>
+  <script src="assets/js/apps.min.js"></script>
+  <!-- ================== END BASE JS ================== -->
+
+  <!-- ================== BEGIN PAGE LEVEL JS ================== -->
+  <script src="assets/plugins/chart-js/Chart.min.js"></script>
+  <script src="assets/js/demo/chart-js.demo.min.js"></script>
+  <!-- ================== END PAGE LEVEL JS ================== -->
+
+  <script>
+
+
+    // ini yang sudah berjalan anjir
+    var ctx = document.getElementById('myChart');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+        datasets: [{
+          label: 'Total Perbulan',
+          data: [12, 19, 3, 15, 12, 32],
+          backgroundColor: [
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          ]
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+    var ctx = document.getElementById('doubleChart');
+    var doubleChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'],
+        datasets: [{
+          label: 'Guest',
+          data: [12, 19, 3, 5, 2, 3, 3, 1, 12, 4, 11, 12],
+          backgroundColor: [
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 99, 132)',
+          ]
+        }, {
+          label: 'User',
+          data: [11, 31, 12, 3, 1, 3, 5, 6, 11, 16, 12, 10],
+          backgroundColor: [
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          'rgba(54, 162, 235)',
+          ]
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+
+
+
+    var ctx = document.getElementById('pieChart');
+    var pieChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Perempuan', 'Laki-Laki'],
+        datasets: [{
+          label: 'Perempuan',
+          data: [12, 19],
+          backgroundColor: [
+          'rgba(54, 162, 235)',
+          'rgba(255, 99, 132)'
+          ]
+        }, {
+          label: 'Laki-laki',
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+
+
+    var ctx = document.getElementById('donutsChart');
+    var donutsChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['PC / Laptop', 'Hp'],
+        datasets: [{
+          label: 'Perempuan',
+          data: [12, 19],
+          backgroundColor: [
+          'rgba(54, 162, 235)',
+          'rgba(255, 99, 132)'
+          ]
+        }, {
+          label: 'Laki-laki',
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+
+    var ctx = document.getElementById('donatChart');
+    var donatChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Orangtua', 'Pelajar', 'guru'],
+        datasets: [{
+          label: 'Perempuan',
+          data: [12, 19, 32],
+          backgroundColor: [
+          'rgba(54, 162, 235)',
+          'rgba(255, 99, 132)',
+          'rgba(255, 123, 221)'
+          ]
+        }, {
+          label: 'Berdasarkan Status Pengujung',
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+
+    var ctx = document.getElementById('lineChart');
+    var lineChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Orangtua', 'Pelajar'],
+        datasets: [{
+          label: 'Perempuan',
+          data: [55, 45],
+          backgroundColor: [
+          'rgba(54, 162, 235)',
+          'rgba(255, 99, 132)'
+          ]
+        }, {
+          label: 'Laki-laki',
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function() {
+      App.init();
+      ChartJs.init();
+    });
+  </script>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '../../../../www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-53034621-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+<!-- Mirrored from seantheme.com/color-admin-v4.3/admin/html/chart-js.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Mar 2019 04:07:18 GMT -->
+
+</html>
