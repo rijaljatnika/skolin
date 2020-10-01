@@ -1,0 +1,46 @@
+:root{
+	--color-primary: #28a745;
+	--color-secondary: #242a30;
+	--color-white: #FFFFFF;
+}
+
+
+/* Utils */
+
+.primary{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.secondary{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.btn-success{
+    background-color: var(--color-primary)!important;
+}
+
+.bg-success{
+    background-color: var(--color-primary)!important;
+}
+
+
+/* End Utils */
+.sidebar{
+    background-color: var(--color-white);
+}
+
+.sidebar .nav .sidebar-nav-link a{
+	color: var(--color-secondary);
+}
+
+
+.sidebar .nav .sidebar-nav-link:hover{
+	transition: all 1s;
+	background-color: var(--color-primary);
+}
+
+.panel-inverse>.panel-heading{
+    background-color: var(--color-primary);
+}
