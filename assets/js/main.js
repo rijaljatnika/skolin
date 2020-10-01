@@ -19,7 +19,7 @@ $(function() {
 
     $(window).on('scroll', function(event) {
         var scroll = $(window).scrollTop();
-        if (scroll < 350) {
+        if (scroll < 150) {
             $(".navigation").removeClass("sticky");
         } else {
             $(".navigation").addClass("sticky");
