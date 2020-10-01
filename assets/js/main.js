@@ -597,12 +597,14 @@ $(function() {
 
     
     $("#filterBtn").on("click",function(event){
-        if ($(document).width() > 764) {
-            $("#main-content").toggleClass("col-lg-9 ml-3 mr-3")
+        if ($(window).width() > 576) {
+            $("#main-content").toggleClass("col-lg-12")
+        }else{
+            $("#main-content").removeClass("col-lg-12")
         }
     });
 
-    if($( document ).width() < 764){
+    if($( window ).width() < 576){
         $("#filterTab").toggleClass("show");
         $("#filterTab").toggleClass("collapse");
     }
