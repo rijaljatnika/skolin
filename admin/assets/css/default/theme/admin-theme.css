@@ -31,10 +31,20 @@
     background-color: var(--color-white);
 }
 
-.sidebar .nav .sidebar-nav-link a{
+.sidebar .nav li a{
 	color: var(--color-secondary);
 }
 
+
+.sidebar .nav li:last-child:hover,.sidebar .nav li:first-child:hover{
+    transition: all 1s;
+	background-color: initial;
+}
+
+.sidebar .nav li:hover{
+    transition: all 1s;
+	background-color: var(--color-primary);
+}
 
 .sidebar .nav .sidebar-nav-link:hover{
 	transition: all 1s;
